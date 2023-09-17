@@ -1,6 +1,4 @@
 # Ecole42
-Piscine 42 - Les sujets de ma piscine à 42 en Juillet 2023 avec mes réponses et des vidéos d'explication
-
 
 Je vous présente mon dossier d'étude lors de ma piscine a 42 en juillet 2023, si vous voulez comprendre comment fonctionne le C vous êtes les bienvenues.
 
