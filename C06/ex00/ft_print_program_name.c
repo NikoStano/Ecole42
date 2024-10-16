@@ -12,42 +12,17 @@
 
 #include <unistd.h>
 
-// void	ft_putstr(char *str)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (str[i])
-// 	{
-// 		write(1, &str[i], 1);
-// 		i++;
-// 	}
-// }
-
-// int	main(int argc, char *argv[])
-// {
-// 	(void) argc;
-// 	ft_putstr(argv[0]);
-// 	ft_putstr("\n");
-// }
-
-int	main(int argc, char *argv[])
+int	main(int ac, char **av)
 {
 	int	i;
-	int	j;
-
+	
+	(void)ac;
 	i = 0;
-	while (i < argc)
+	while (av[0][i])
 	{
-		if (i > 0)
-			return (0);
-		j = 0;
-		while (argv[i][j])
-		{
-			write(1, &argv[i][j], 1);
-			j++;
-		}
+		write(1, &av[0][i], 1);
 		i++;
-		write(1, "\n", 1);
 	}
+	write(1, "\n", 1);
+	return (0);
 }
