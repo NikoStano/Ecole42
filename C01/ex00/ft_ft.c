@@ -15,14 +15,22 @@ void	ft_ft(int *nbr)
 	*nbr = 42;
 }
 
-/*#include <stdio.h>
-int	main(void)
-{
-	int nbr = 0;
-	printf("%p\n", &nbr);
-	printf("%d\n", nbr);
-	ft_ft(&nbr);
-	printf("%d\n", nbr);
-	return (0);
-}
-*/
+// void    ft_putchar(char c)
+// {
+//     write(1, &c, 1);
+// }
+// void    ft_putint(int i)
+// {
+//     if (i / 10)
+//         ft_putint(i / 10);
+//     ft_putchar(i % 10 + 48);
+// }
+// int main(void)
+// {
+//     int n;
+//     int *nb = &n;
+//     ft_ft(nb);
+//     ft_putint(n);
+//     ft_putchar('\n');
+//     return (n);
+// }
