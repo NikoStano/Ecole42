@@ -14,13 +14,13 @@
 
 void	ft_print_numbers(void)
 {
-	char	a;
+	char	n;
 
-	a = 48;
-	while (a <= (48 + 9))
+	n = 48;
+	while (n <= 57)
 	{
-		write(1, &a, 1);
-		a++;
+		write(1, &n, 1);
+		n++;
 	}
 }
 
