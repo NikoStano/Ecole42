@@ -11,15 +11,32 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdlib.h>
 
-void	ft_putstr(char *str)
+void    ft_putstr(char *str)
 {
-	int		i;
+    int i;
 
-	i = 0;
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
+    i = 0;
+    while (str[i])
+    {
+        write(1, &str[i], 1);
+        i++;
+    }
+    str[i] = '\0';
 }
+
+// int main(int ac, char **av)
+// {
+//     int i = 1;
+//     if (ac > 1)
+//     {
+//         while (i < ac)
+//         {
+//             ft_putstr(av[i]);
+//             write(1, "\n", 1);
+//             i++;
+//         }
+//     }
+//     return (0);
+// }
