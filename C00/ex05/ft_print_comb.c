@@ -36,9 +36,7 @@ void	ft_print_comb(void)
 			{
 				ft_putchar(a, b, c);
 				if (a != '7')
-				{
 					write (1, ", ", 2);
-				}
 				c++;
 			}
 			b++;
