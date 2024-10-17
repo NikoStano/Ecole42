@@ -26,22 +26,12 @@ int	ft_iterative_factorial(int nb)
 	return (nb);
 }
 
-// #include <stdio.h>
+/*
+#include <stdlib.h>
+#include <stdio.h>
 
-// int	main()
-// {
-// 	printf("%d\n", ft_iterative_factorial(-72));
-// 	printf("%d\n", ft_iterative_factorial(0));
-// 	printf("%d\n", ft_iterative_factorial(1));
-// 	printf("%d\n", ft_iterative_factorial(2));
-// 	printf("%d\n", ft_iterative_factorial(12));
-// 	printf("%d\n", ft_iterative_factorial(3));
-// 	printf("%d\n", ft_iterative_factorial(4));
-// 	printf("%d\n", ft_iterative_factorial(5));
-// 	printf("%d\n", ft_iterative_factorial(7));
-// 	printf("%d\n", ft_iterative_factorial(8));
-// 	printf("%d\n", ft_iterative_factorial(9));
-// 	printf("%d\n", ft_iterative_factorial(10));
-// 	printf("%d\n", ft_iterative_factorial(11));
-// 	printf("%d\n", ft_iterative_factorial(12));
-// }
+int	main(int ac, char **av)
+{
+	(void)ac;
+	printf("%d\n", ft_iterative_factorial(atoi(av[1])));
+}*/
