@@ -24,7 +24,7 @@ void	ft_rev_int_tab(int *tab, int size)
 		temp = *tab;
 		*tab = end;
 		end = temp;
-		tab++
-		end--
+		tab++;
+		end--;
 	}
 }
