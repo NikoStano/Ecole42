@@ -14,17 +14,18 @@
 
 void	ft_rev_int_tab(int *tab, int size)
 {
+	int	i;
 	int	temp;
 	int	end;
 
-	temp = 0;
-	end = 0;
-	while (*tab < (size / 2))
+	i = 0;
+	end = size - 1;
+	while (i < end)
 	{
-		temp = *tab;
-		*tab = end;
-		end = temp;
-		tab++;
+		temp = tab[i];
+		tab[i] = tab[end];
+		tab[end] = temp;
+		i++;
 		end--;
 	}
 }
