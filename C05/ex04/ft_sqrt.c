@@ -14,7 +14,7 @@
 
 int	ft_sqrt(int nb)
 {
-	long int	i;
+	long	i;
 
 	i = 1;
 	if (nb == 0 || nb < 0)
