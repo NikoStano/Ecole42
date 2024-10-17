@@ -30,10 +30,11 @@ int	ft_is_prime(int nb)
 	return (1);
 }
 
-// #include <stdio.h>
-
-// int	main ()
-// {
-// 	printf("%d\n", ft_is_prime(10));
-// 	printf("%d\n", ft_is_prime(11));
-// }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+int	main(int ac, char **av)
+{
+	(void)ac;
+	printf("Result : %d\n", ft_is_prime(atoi(av[1])));
+}*/
