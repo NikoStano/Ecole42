@@ -11,17 +11,19 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int	ft_atoi(char *str)
 {
 	int	i;
-	int	nb;
+	int	res;
 	int	neg;
 
 	i = 0;
-	nb = 0;
+	res = 0;
 	neg = 1;
-	while ((str[i] == 32) || (str[i] >= 9 && str[i] <= 13))
+	while ((str[i] == 32) || (str[i] > 8 && str[i] < 14))
 		i++;
 	while (str[i] == '+' || str[i] == '-')
 	{
@@ -29,19 +31,18 @@ int	ft_atoi(char *str)
 			neg = neg * -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] > 47 && str[i] < 58)
 	{
-		nb = (nb * 10) + (str[i] - 48);
+		res = res * 10 + str[i] - 48;
 		i++;
 	}
-	nb = nb * neg;
-	return (nb);
+	return (res * neg);
 }
-
-//  #include <stdio.h>
 
 //  int	main(void)
 //  {
 // 	char	str[] = "13";
+//	char	str1[] = "42";
 // 	printf("%d\n", ft_atoi(str));
+// 	printf("%d\n", atoi(str1));
 // }
