@@ -20,16 +20,18 @@ int	ft_fibonacci(int index)
 		return (0);
 	if (index == 1)
 		return (1);
-	if (index >= 1)
+	if (index > 1)
 		return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 	return (0);
 }
 
-// #include <stdio.h>
+/*
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-// int	main()
-// {
-// 	printf("%d\n", ft_fibonacci(11));
-// 	printf("%d\n", ft_fibonacci(10));
-// 	printf("%d\n", ft_fibonacci(7));
-// }
+int	main(int ac, char **av)
+{
+	(void)ac;
+	printf("Result : %d\n", ft_fibonacci(atoi(av[1])));
+}*/
